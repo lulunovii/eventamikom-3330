@@ -9,6 +9,6 @@ class EventController extends Controller
 {
     public function index()
     {
-        return view('admin.event');
+        return view('admin.events');
     }
 }
