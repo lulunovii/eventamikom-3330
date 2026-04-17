@@ -1,6 +1,13 @@
 Lulu Noviyanti (24.12.3330)
 
-https://eventamikom-3330-main-wxwizn.free.laravel.cloud/
+https://eventamikom-3330-main-wxwizn.free.laravel.cloud/ <br>
+Tugas 2
+1. Halaman Dashboard : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/dashboard <br>
+2. Halaman Event : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events <br>
+3. Halaman Transaksi : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/transactions <br>
+4. Halaman Beranda : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/ <br>
+5. Halaman Detail Event: https://eventamikom-3330-main-wxwizn.free.laravel.cloud/event <br>
+6. Halaman Checkout : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/checkout <br>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
