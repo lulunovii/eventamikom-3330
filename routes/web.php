@@ -1,28 +1,30 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\TicketController;
+use App\Http\Controllers\CategoryController;
 
-// Rute Home
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-//route kontak
-Route::get('/kontak', function () {
-    return view('contact');
-});
+Route::get('/event', [EventController::class, 'show'])->name('event.show');
+Route::get('/checkout', [EventController::class, 'checkout'])->name('checkout');
+Route::get('/ticket', [TicketController::class, 'ticket'])->name('ticket');
 
-// Rute Profil
-Route::get('/profil', function () {
-    return view('profil');
-});
+Route::prefix('admin')->group(function () {
 
-// Rute Katalog Event
-Route::get('/katalog', function () {
-    return view('katalog');
-});
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
 
-// Rute Bantuan / FAQ
-Route::get('/bantuan', function () {
-    return view('bantuan');
+    Route::get('/events', function () {
+        return view('admin.events');
+    })->name('admin.events');
+
+    Route::get('/transactions', function () {
+        return view('admin.transactions');
+    })->name('admin.transactions');
+
+    Route::get('/categories', [CategoryController::class, 'index'])->name('admin.categories');
 });
