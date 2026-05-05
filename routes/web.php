@@ -14,8 +14,8 @@ Route::get('/checkout', [UserEventController::class, 'checkout'])->name('checkou
 Route::get('/ticket', [TicketController::class, 'ticket'])->name('ticket');
 
 // --- HALAMAN ADMIN ---
-Route::prefix('admin')->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-    Route::get('/events', [AdminEventController::class, 'index'])->name('admin.events');
-    Route::get('/transactions', [DashboardController::class, 'transactions'])->name('admin.transactions');
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/transactions', [DashboardController::class, 'transactions'])->name('transactions');
+    Route::resource('events', AdminEventController::class); 
 });
