@@ -1,5 +1,5 @@
 Lulu Noviyanti (24.12.3330)<br>
-Tugas 1
+Tugas 1<br>
 https://eventamikom-3330-main-wxwizn.free.laravel.cloud/ <br>
 
 Tugas 2
@@ -10,10 +10,10 @@ Tugas 2
 5. Halaman Detail Event: https://eventamikom-3330-main-wxwizn.free.laravel.cloud/event <br>
 6. Halaman Checkout : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/checkout <br>
 
-Tugas 3
+Tugas 3<br>
 screenshot database, tabel categories dan events : https://drive.google.com/drive/folders/1L4qCFTvh1R2zs3nXv6yg8Idvu3dd-7Vu?usp=sharing<br>
 
-Tugas 4
+Tugas 4<br>
 halaman admin events: https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events<br>
 halaman create : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events/create<br>
 halaman edit atau update : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events/9/edit<br>
