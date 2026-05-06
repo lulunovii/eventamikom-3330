@@ -16,7 +16,6 @@ screenshot database, tabel categories dan events : https://drive.google.com/driv
 Tugas 4<br>
 halaman admin events: https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events<br>
 halaman create : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events/create<br>
-halaman edit atau update : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events/9/edit<br>
 screenshot tampilan halaman : https://drive.google.com/drive/folders/13lJ9BtXpMxd-PCNu8aHhSeLH9D3kL-MF?usp=sharing<br>
 
 
