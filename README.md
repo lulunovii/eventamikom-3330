@@ -1,6 +1,7 @@
-Lulu Noviyanti (24.12.3330)
-
+Lulu Noviyanti (24.12.3330)<br>
+Tugas 1<br>
 https://eventamikom-3330-main-wxwizn.free.laravel.cloud/ <br>
+
 Tugas 2
 1. Halaman Dashboard : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/dashboard <br>
 2. Halaman Event : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events <br>
@@ -8,6 +9,15 @@ Tugas 2
 4. Halaman Beranda : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/ <br>
 5. Halaman Detail Event: https://eventamikom-3330-main-wxwizn.free.laravel.cloud/event <br>
 6. Halaman Checkout : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/checkout <br>
+
+Tugas 3<br>
+screenshot database, tabel categories dan events : https://drive.google.com/drive/folders/1L4qCFTvh1R2zs3nXv6yg8Idvu3dd-7Vu?usp=sharing<br>
+
+Tugas 4<br>
+halaman admin events: https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events<br>
+halaman create : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events/create<br>
+screenshot tampilan halaman : https://drive.google.com/drive/folders/13lJ9BtXpMxd-PCNu8aHhSeLH9D3kL-MF?usp=sharing<br>
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
