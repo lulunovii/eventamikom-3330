@@ -4,7 +4,17 @@
 <div class="flex justify-between items-center mb-10">
     <div>
         <h1 class="text-3xl font-bold text-slate-800 tracking-tight">Kelola Partner</h1>
-        <p class="text-slate-500 mt-1 font-medium">Buat dan atur partner Anda di sini.</p>
+        <p class="text-slate-500 mt-1 font-medium">Daftar partner yang bekerja sama untuk event.</p>
+    </div>
+    
+    <div class="flex items-center gap-4">
+        <div class="text-right">
+            <h6 class="text-sm font-bold text-slate-800">Admin Amikom</h6>
+            <p class="text-xs text-slate-500 font-medium">Penyelenggara Utama</p>
+        </div>
+        <div class="w-12 h-12 bg-indigo-50 text-indigo-600 border-2 border-indigo-200 rounded-full flex items-center justify-center font-bold text-lg">
+            AA
+        </div>
     </div>
 </div>
 
