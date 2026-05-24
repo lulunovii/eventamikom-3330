@@ -5,16 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Partner extends Model
 {
     use HasFactory;
-    
+
     protected $fillable = [
         'name', 
-        'slug'
+        'logo_url',
+        'link'
     ];
-    
-    public function events() {
-    return $this->hasMany(Event::class);
-    }
 }

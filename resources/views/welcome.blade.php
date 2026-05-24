@@ -153,4 +153,43 @@
         </div>
     </section>
 
+    <!-- Partners Section -->
+     <section class="py-16 bg-slate-50 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <h2 class="text-3xl font-extrabold text-slate-800 tracking-tight mb-2">
+                Partner & Sponsor
+            </h2>
+            <p class="text-slate-500 mb-10 font-medium">
+                Didukung oleh partner perusahaan dan komunitas luar biasa yang menyukseskan AmikomEventHub.
+            </p>
+
+            <!-- Grid untuk menampilkan logo -->
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5 items-center justify-items-center">
+                
+                <!-- Memulai perulangan Blade Engine -->
+                @foreach($partners as $partner)
+                    <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1 p-4 bg-white rounded-2xl shadow-sm border border-slate-100 w-full hover:shadow-md transition">
+                        
+                        @if($partner->link)
+                            <a href="{{ $partner->link }}" target="_blank" class="block w-full flex justify-center">
+                        @endif
+
+                        @if($partner->logo_url)
+                            <img class="h-16 object-contain grayscale hover:grayscale-0 transition duration-300" src="{{ $partner->logo_url }}" alt="Logo {{ $partner->name }}" title="{{ $partner->name }}">
+                        @else
+                            <span class="text-lg font-bold text-slate-400">{{ $partner->name }}</span>
+                        @endif
+
+                        @if($partner->link)
+                            </a>
+                        @endif
+
+                    </div>
+                @endforeach
+                
+            </div>    
+        </div>
+    </section>
+
 @endsection
