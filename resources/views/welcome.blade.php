@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
- <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
+ <section class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
         <div class="flex-1 space-y-8">
             <span
                 class="inline-block px-4 py-1.5 bg-indigo-100 text-indigo-700 rounded-full text-sm font-bold uppercase tracking-wider">#1
@@ -51,7 +50,6 @@
         </div>
     </section>
 
-    <!-- Events Grid -->
     <section id="events" class="max-w-7xl mx-auto px-6 py-20">
         <div class="flex justify-between items-end mb-12">
             <div>
@@ -63,8 +61,12 @@
             </div>
         </div>
 
+        @php 
+            // Mengambil 1 event dari database untuk dijadikan link dummy pada card statis
+            $sampleEvent = $events->first(); 
+        @endphp
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Event Card 1 -->
             <div
                 class="group bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden">
                 <div class="relative overflow-hidden aspect-[3/4]">
@@ -86,14 +88,13 @@
                     </div>
                     <div class="flex justify-between items-center pt-4 border-t">
                         <span class="text-2xl font-black text-indigo-600">Rp 150rb</span>
-                        <a href="{{ route('event.show', $event->id) }}"
+                        <a href="{{ route('event.show', $sampleEvent->id ?? 1) }}"
                             class="px-5 py-2 bg-indigo-50 text-indigo-600 rounded-xl font-bold hover:bg-indigo-600 hover:text-white transition">Lihat
                             Detail</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Event Card 2 -->
             <div
                 class="group bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden">
                 <div class="relative overflow-hidden aspect-[3/4]">
@@ -115,14 +116,13 @@
                     </div>
                     <div class="flex justify-between items-center pt-4 border-t">
                         <span class="text-2xl font-black text-indigo-600">Rp 50rb</span>
-                        <a href="{{ route('event.show', $event->id) }}"
+                        <a href="{{ route('event.show', $sampleEvent->id ?? 1) }}"
                             class="px-5 py-2 bg-indigo-50 text-indigo-600 rounded-xl font-bold hover:bg-indigo-600 hover:text-white transition">Lihat
                             Detail</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Event Card 3 -->
             <div
                 class="group bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden">
                 <div class="relative overflow-hidden aspect-[3/4]">
@@ -144,7 +144,7 @@
                     </div>
                     <div class="flex justify-between items-center pt-4 border-t">
                         <span class="text-2xl font-black text-indigo-600">Gratis</span>
-                        <a href="{{ route('event.show', $event->id) }}"
+                        <a href="{{ route('event.show', $sampleEvent->id ?? 1) }}"
                             class="px-5 py-2 bg-indigo-50 text-indigo-600 rounded-xl font-bold hover:bg-indigo-600 hover:text-white transition">Lihat
                             Detail</a>
                     </div>
@@ -153,8 +153,7 @@
         </div>
     </section>
 
-    <!-- Partners Section -->
-     <section class="py-16 bg-slate-50 mt-10">
+    <section class="py-16 bg-slate-50 mt-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             
             <h2 class="text-3xl font-extrabold text-slate-800 tracking-tight mb-2">
@@ -164,10 +163,8 @@
                 Didukung oleh partner perusahaan dan komunitas luar biasa yang menyukseskan AmikomEventHub.
             </p>
 
-            <!-- Grid untuk menampilkan logo -->
             <div class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5 items-center justify-items-center">
                 
-                <!-- Memulai perulangan Blade Engine -->
                 @foreach($partners as $partner)
                     <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1 p-4 bg-white rounded-2xl shadow-sm border border-slate-100 w-full hover:shadow-md transition">
                         

@@ -47,7 +47,7 @@ class CheckoutController extends Controller
         ]);
 
         //5. Arahkan ke rute dummy halaman sukses sementara
-        //(Akan kita ubah di Pertemuan selanjutnya menuju Midtransa)
-        return redirect()->route('checkout.success', $transaction->order_id);
+        //(Akan kita ubah di Pertemuan selanjutnya menuju Midtrans)
+        return redirect()->route('home');
     }
 }

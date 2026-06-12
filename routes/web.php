@@ -34,7 +34,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::middleware(['auth', 'admin'])->group(function () {
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::resource('events', EventAdminController::class);
-        Route::get('transactions', [TransactionController::class, 'index'])->name('transactions.index');
+        Route::get('transactions', [\App\Http\Controllers\Admin\TransactionController::class, 'index'])->name('transactions.index');
         Route::resource('categories', CategoryAdminContorller::class);
         Route::resource('partners', PartnerController::class);
     });
