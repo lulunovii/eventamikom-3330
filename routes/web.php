@@ -12,8 +12,10 @@ use App\Http\Controllers\Admin\PartnerController;
 
 // --- HALAMAN USER ---
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/event', [UserEventController::class, 'show'])->name('event.show');
-Route::get('/checkout', [UserEventController::class, 'checkout'])->name('checkout');
+Route::get('/event/{id}', [UserEventController::class, 'show'])->name('event.show');
+Route::get('/checkout/{event}', [\App\Http\Controllers\CheckoutController::class, 'create'])->name('checkout.create');
+Route::post('/checkout/{event}', [\App\Http\Controllers\CheckoutController::class, 'store'])->name('checkout.store');
+//Route::get('/checkout', [UserEventController::class, 'checkout'])->name('checkout');
 Route::get('/ticket', [TicketController::class, 'ticket'])->name('ticket');
 
 Route::get('/login', function () {
@@ -32,7 +34,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::middleware(['auth', 'admin'])->group(function () {
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::resource('events', EventAdminController::class);
-        Route::get('transactions', [TransactionController::class, 'transactions'])->name('transactions');
+        Route::get('transactions', [TransactionController::class, 'index'])->name('transactions.index');
         Route::resource('categories', CategoryAdminContorller::class);
         Route::resource('partners', PartnerController::class);
     });
