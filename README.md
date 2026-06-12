@@ -11,13 +11,15 @@ Tugas 2
 6. Halaman Checkout : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/checkout <br>
 
 Tugas 3<br>
-screenshot database, tabel categories dan events : https://drive.google.com/drive/folders/1L4qCFTvh1R2zs3nXv6yg8Idvu3dd-7Vu?usp=sharing<br>
+Screenshot database, tabel categories dan events : https://drive.google.com/drive/folders/1L4qCFTvh1R2zs3nXv6yg8Idvu3dd-7Vu?usp=sharing<br>
 
 Tugas 4<br>
-halaman admin events: https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events<br>
-halaman create : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events/create<br>
-screenshot tampilan halaman : https://drive.google.com/drive/folders/13lJ9BtXpMxd-PCNu8aHhSeLH9D3kL-MF?usp=sharing<br>
+Halaman admin events: https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events<br>
+Halaman create : https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/events/create<br>
+Screenshot tampilan halaman : https://drive.google.com/drive/folders/13lJ9BtXpMxd-PCNu8aHhSeLH9D3kL-MF?usp=sharing<br>
 
+Tugas 8<br>
+Halaman Login Admin: https://eventamikom-3330-main-wxwizn.free.laravel.cloud/admin/login<br>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
