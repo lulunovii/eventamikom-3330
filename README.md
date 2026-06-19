@@ -26,6 +26,9 @@ password: password<br>
 Tugas 10<br>
 Halaman detail event: https://eventamikom-3330-main-wxwizn.free.laravel.cloud/event-detail.html<br>
 
+admin infinityfree: http://amikomeventhub3330.gt.tc/admin/login <br>
+halaman utama: http://amikomeventhub3330.gt.tc/ <br>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
