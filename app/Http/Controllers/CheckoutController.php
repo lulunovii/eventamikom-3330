@@ -53,6 +53,10 @@ class CheckoutController extends Controller
         \Midtrans\Config::$isSanitized = true;
         \Midtrans\Config::$is3ds = true;
 
+        \Midtrans\Config::$curlOptions[CURLOPT_SSL_VERIFYHOST] = 0;
+        \Midtrans\Config::$curlOptions[CURLOPT_SSL_VERIFYPEER] = 0;
+        \Midtrans\Config::$curlOptions[CURLOPT_HTTPHEADER] = [];
+
         // Susun Paket Array Data Transaksi
         $params = [
             'transaction_details' => [
