@@ -103,7 +103,11 @@ class CheckoutController extends Controller
          // Validasi status pembayaran asli dari Midtrans (Mencegah manipulasi URL)
          \Midtrans\Config::$serverKey = env('MIDTRANS_SERVER_KEY');
         \Midtrans\Config::$isProduction = false;
-         
+        
+        \Midtrans\Config::$curlOptions[CURLOPT_SSL_VERIFYHOST] = 0;
+        \Midtrans\Config::$curlOptions[CURLOPT_SSL_VERIFYPEER] = 0;
+        \Midtrans\Config::$curlOptions[CURLOPT_HTTPHEADER] = [];
+        
          try {
              $midtransStatus = \Midtrans\Transaction::status($order_id);
              
